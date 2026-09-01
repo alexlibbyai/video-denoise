@@ -1,0 +1,14 @@
+pymdown-extensions
+
+numpy
+scipy
+matplotlib
+
+librosa
+soundfile
+
+h5py
+
+networkx
+
+ffmpeg-python
