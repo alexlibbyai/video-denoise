@@ -5,12 +5,6 @@ __pycache__/
 # Virtual Environment
 .venv/
 
-# Build
-site/
-
-# MkDocs
-/site
-
 # Jupyter
 .ipynb_checkpoints/
 
