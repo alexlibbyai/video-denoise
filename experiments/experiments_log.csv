@@ -1,0 +1,20 @@
+experiment_id,date,stage,title,status,notes
+EXP-000,2026-09-03,Setup,Project Foundation,Complete,"Documentation site, GitHub Pages and deployment pipeline established"
+EXP-001,2026-09-03,Audio,Audio Extraction Baseline,Complete,"FFmpeg extraction working; output WAV validated by listening"
+EXP-002,2026-09-03,Encoder,RMS Baseline,Complete,"20ms window, 10ms hop; RMS CSV and plots generated"
+EXP-003,2026-09-03,Encoder,RMS Normalisation,Planned,"Compare raw vs normalised visualisations"
+EXP-004,2026-09-03,Encoder,Spike Thresholds,Planned,"Evaluate spike generation from RMS values"
+experiment_id,date,stage,title,status,configuration,result,next_action
+EXP-002,2026-09-03,Encoder,RMS Baseline,Complete,"20ms window;10ms hop","Meaningful energy envelope observed","Proceed to spike generation"
+experiment_id,date,stage,title,status,configuration,result,next_action
+EXP-003,2026-09-03,Encoder,Threshold Strategy Investigation,Planned,"Compare 1,2,4 and 8 threshold spike encoders using identical RMS input data","Not started","Implement baseline spike generator and generate raster plots"
+experiment_id,date,stage,title,status,configuration,result,next_action
+EXP-003,2026-09-03,Encoder,Threshold Strategy Investigation,In Progress,"Compare 1,2,4 and 8 threshold spike encoders using identical RMS input data","Baseline spike generator implemented","Generate spike rasters for all configurations"
+experiment_id,date,stage,title,status,configuration,result,next_action
+EXP-003,2026-09-03,Encoder,Threshold Strategy Investigation,Complete,"1,2,4,8 thresholds","4-threshold configuration provided best balance between sparsity and information density","Use 4-threshold configuration in baseline reservoir prototype"
+EXP-003,2026-09-03,Encoder,Single Threshold Baseline,Complete,"Single threshold RMS spike generation","Pipeline successfully generated spike trains and raster plot. Temporal structure visible but representation limited to one neuron.","Investigate multi-threshold encoding"
+EXP-004,2026-09-04,Reservoir,Reservoir MVP,Complete,"20-neuron static reservoir","Reservoir integrated successfully. Distinct neuron activity patterns observed. Temporal structure preserved through reservoir layer.","Implement readout layer"
+SYS-001,Prototype,End-to-End Processing Chain,Complete,"Audio -> RMS -> Spikes -> Reservoir -> Readout operational"
+EXP-004,Reservoir MVP,Complete,"20-neuron reservoir integrated successfully"
+EXP-005,Reconstruction MVP,Complete,"Readout activity interpolated to audio waveform","Output WAV generated successfully. Timing and activity envelope preserved. Speech content lost. RMS-only encoding appears insufficient for intelligible speech reconstruction.","Investigate multi-band spectral encoding"
+SYS-001,Prototype,End-to-End MVP,Complete,"Audio->RMS->Spikes->Reservoir->Readout->Reconstruction","System executes successfully. Reconstruction generates output WAV but speech intelligibility is poor.","Investigate richer encoding methods"
