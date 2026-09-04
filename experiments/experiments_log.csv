@@ -18,3 +18,4 @@ SYS-001,Prototype,End-to-End Processing Chain,Complete,"Audio -> RMS -> Spikes -
 EXP-004,Reservoir MVP,Complete,"20-neuron reservoir integrated successfully"
 EXP-005,Reconstruction MVP,Complete,"Readout activity interpolated to audio waveform","Output WAV generated successfully. Timing and activity envelope preserved. Speech content lost. RMS-only encoding appears insufficient for intelligible speech reconstruction.","Investigate multi-band spectral encoding"
 SYS-001,Prototype,End-to-End MVP,Complete,"Audio->RMS->Spikes->Reservoir->Readout->Reconstruction","System executes successfully. Reconstruction generates output WAV but speech intelligibility is poor.","Investigate richer encoding methods"
+EXP-005,2026-09-04,Reconstruction,Reconstruction MVP,Complete,"Single RMS -> Reservoir -> Readout reconstruction","Output WAV generated successfully. Speech intelligibility absent. Activity envelope visible but spectral content lost.","Investigate frequency-band encoding"
